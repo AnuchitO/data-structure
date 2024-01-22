@@ -3,14 +3,14 @@
 # Data structure transformation for programming practices and algorithms
 
 ## All data types from Go, Python, Kotlin, Java, TypeScript, C++, Rust, C#
-- [] [Go](#go)
-- [] [Python](#python)
-- [] [Kotlin](#kotlin)
-- [] [Java](#java)
-- [] [TypeScript](#typescript)
-- [] [C++](#c++)
-- [] [Rust](#rust)
-- [] [C#](#c#)
+- [ ] [Go](#go)
+- [ ] [Python](#python)
+- [ ] [Kotlin](#kotlin)
+- [ ] [Java](#java)
+- [ ] [TypeScript](#typescript)
+- [ ] [C++](#c++)
+- [ ] [Rust](#rust)
+- [ ] [C#](#c#)
 
 
 
@@ -44,7 +44,7 @@
 - [ ] array
 	- array: `var val [5]int = [5]int{1, 2, 3, 4, 5}`
 - [ ] slice
-	- - slice: `var val []int = []int{1, 2, 3, 4, 5}`
+	- - slice: `var val [ ]int = [ ]int{1, 2, 3, 4, 5}`
 - [ ] map
 	- map: `var val map[string]int = map[string]int{"a": 1, "b": 2, "c": 3}`
 - [ ] struct
@@ -146,7 +146,7 @@
 - [ ] String
 	- String: `String val = "Hello World"`
 - [ ] array
-	- - array: `int[] val = new int[]{1, 2, 3, 4, 5}`
+	- - array: `int[ ] val = new int[ ]{1, 2, 3, 4, 5}`
 - [ ] List
 	- List: `List<Integer> val = Arrays.asList(1, 2, 3, 4, 5)`
 - [ ] Set
@@ -178,7 +178,7 @@
 - [ ] string
 	- string: `let val: string = "Hello World"`
 - [ ] array
-	- - array: `let val: number[] = [1, 2, 3, 4, 5]`
+	- - array: `let val: number[ ] = [1, 2, 3, 4, 5]`
 - [ ] tuple
 	- tuple: `let val: [number, string] = [1, "Hello World"]`
 - [ ] enum
@@ -335,7 +335,7 @@
 - [ ] string
 	- string: `string val = "Hello World"`
 - [ ] array
-	- - array: `int[] val = new int[]{1, 2, 3, 4, 5}`
+	- - array: `int[ ] val = new int[ ]{1, 2, 3, 4, 5}`
 - [ ] list
 	- list: `List<int> val = new List<int>{1, 2, 3, 4, 5}`
 - [ ] dictionary
