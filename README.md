@@ -547,3 +547,207 @@ list of categories:
 - C++: pointer
 - Rust: nil
 - C#: nil
+
+
+# Combination mapping of all types like pair of type to type such as int to int, int to string, string to int, string to string, etc.
+list of categories:
+- [ ] int to int
+	e.g. Go: int to int, Python: int to int, Kotlin: Int to Int, Java: int to int, TypeScript: number to number, C++: int to int, Rust: i32 to i32, C#: int to int
+	code example function name that use in real world:
+	- [ ] add
+		- Go: `func add(a int, b int) int { return a + b }`
+		- Python: `def add(a: int, b: int) -> int: return a + b`
+		- Kotlin: `fun add(a: Int, b: Int): Int = a + b`
+		- Java: `int add(int a, int b) { return a + b; }`
+		- TypeScript: `function add(a: number, b: number): number { return a + b }`
+		- C++: `int add(int a, int b) { return a + b; }`
+		- Rust: `fn add(a: i32, b: i32) -> i32 { a + b }`
+		- C#: `int add(int a, int b) { return a + b; }`
+	- [ ] subtract
+	- [ ] multiply
+	- [ ] divide
+	- [ ] modulo
+	- [ ] power
+	- [ ] root
+	- [ ] log
+	- [ ] factorial
+	- [ ] permutation
+	- [ ] combination
+	- [ ] gcd
+	- [ ] lcm
+	- [ ] min
+	- [ ] max
+	- [ ] sum
+- [ ] int to string
+	e.g. Go: int to string, Python: int to str, Kotlin: Int to String, Java: int to String, TypeScript: number to string, C++: int to string, Rust: i32 to str, C#: int to string
+	code example function name that use in real world:
+	- [ ] toString
+		- Go: `func toString(val int) string { return strconv.Itoa(val) }`
+			example: input: 123, output: "123"
+		- Python: `def toString(val: int) -> str: return str(val)`
+			example: input: 123, output: "123"
+		- Kotlin: `fun toString(val: Int): String = val.toString()`
+			example: input: 123, output: "123"
+		- Java: `String toString(int val) { return Integer.toString(val); }`
+			example: input: 123, output: "123"
+		- TypeScript: `function toString(val: number): string { return val.toString() }`
+			example: input: 123, output: "123"
+		- C++: `string toString(int val) { return to_string(val); }`
+			example: input: 123, output: "123"
+		- Rust: `fn toString(val: i32) -> String { val.to_string() }`
+			example: input: 123, output: "123"
+		- C#: `string toString(int val) { return val.ToString(); }`
+			example: input: 123, output: "123"
+
+	- [ ] toBinary
+	- [ ] toOctal
+	- [ ] toHex
+	- [ ] toRoman
+	- [ ] toEnglish (e.g. 1 to one, 2 to two, 3 to three, etc.)
+	- [ ] toThaiTextNumber (e.g. 123 to หนึ่งร้อยยี่สิบสาม, 456 to สี่ร้อยห้าสิบหก, etc.)
+		- Go: `func toThaiTextNumber(val int) string { return "" }`
+			example: input: 123, output: "หนึ่งร้อยยี่สิบสาม"
+		- Python: `def toThaiTextNumber(val: int) -> str: return ""`
+		- Kotlin: `fun toThaiTextNumber(val: Int): String = ""`
+		- Java: `String toThaiTextNumber(int val) { return ""; }`
+		- TypeScript: `function toThaiTextNumber(val: number): string { return "" }`
+		- C++: `string toThaiTextNumber(int val) { return ""; }`
+		- Rust: `fn toThaiTextNumber(val: i32) -> String { "".to_string() }`
+		- C#: `string toThaiTextNumber(int val) { return ""; }`
+
+- [ ] string to int
+	e.g. Go: string to int, Python: str to int, Kotlin: String to Int, Java: String to int, TypeScript: string to number, C++: string to int, Rust: str to i32, C#: string to int
+	code example function name that use in real world:
+	- [ ] parseInt
+		- Go: `func parseInt(val string) int { return strconv.Atoi(val) }`
+			example: input: "2557", output: 2557
+		- Python: `def parseInt(val: str) -> int: return int(val)`
+			example: input: "2557", output: 2557
+		- Kotlin: `fun parseInt(val: String): Int = val.toInt()`
+			example: input: "2557", output: 2557
+		- Java: `int parseInt(String val) { return Integer.parseInt(val); }`
+		- TypeScript: `function parseInt(val: string): number { return parseInt(val) }`
+		- C++: `int parseInt(string val) { return stoi(val); }`
+		- Rust: `fn parseInt(val: &str) -> i32 { val.parse::<i32>().unwrap() }`
+		- C#: `int parseInt(string val) { return int.Parse(val); }`
+	- [ ] parseBinary
+	- [ ] parseOctal
+	- [ ] parseHex
+	- [ ] parseRoman
+	- [ ] parseEnglish (e.g. one to 1, two to 2, three to 3, etc.)
+	- [ ] parseThaiTextNumber (e.g. หนึ่งร้อยยี่สิบสาม to 123, สี่ร้อยห้าสิบหก to 456, etc.)
+		- Go: `func parseThaiTextNumber(val string) int { return 0 }`
+			example: input: "หนึ่งร้อยยี่สิบสาม", output: 123
+		- Python: `def parseThaiTextNumber(val: str) -> int: return 0`
+		- Kotlin: `fun parseThaiTextNumber(val: String): Int = 0`
+		- Java: `int parseThaiTextNumber(String val) { return 0; }`
+		- TypeScript: `function parseThaiTextNumber(val: string): number { return 0 }`
+		- C++: `int parseThaiTextNumber(string val) { return 0; }`
+		- Rust: `fn parseThaiTextNumber(val: &str) -> i32 { 0 }`
+		- C#: `int parseThaiTextNumber(string val) { return 0; }`
+- [ ] string to string
+	e.g. Go: string to string, Python: str to str, Kotlin: String to String, Java: String to String, TypeScript: string to string, C++: string to string, Rust: str to str, C#: string to string
+	code example function name that use in real world in financial domain:
+	- [ ] formatNumber
+		- Go: `func formatCurrency(val string) string { return "" }`
+			example: input: "123456789", output: "123,456,789.00"
+		- Python: `def formatCurrency(val: str) -> str: return ""`
+		- Kotlin: `fun formatCurrency(val: String): String = ""`
+		- Java: `String formatCurrency(String val) { return ""; }`
+		- TypeScript: `function formatCurrency(val: string): string { return "" }`
+		- C++: `string formatCurrency(string val) { return ""; }`
+		- Rust: `fn formatCurrency(val: &str) -> String { "".to_string() }`
+			example: input: "123456789", output: "123,456,789.00"
+		- C#: `string formatCurrency(string val) { return ""; }`
+
+- [ ] int to float
+	e.g. Go: int to float, Python: int to float, Kotlin: Int to Float, Java: int to float, TypeScript: number to number, C++: int to float, Rust: i32 to f32, C#: int to float
+	code example function name that use in real world in hospital domain:
+	- [ ] calculateBMI
+		- Go: `func calculateBMI(weight int, height int) float32 { return 0 }`
+			example: input: weight: 60, height: 170, output: 20.76
+		- Python: `def calculateBMI(weight: int, height: int) -> float: return 0`
+		- Kotlin: `fun calculateBMI(weight: Int, height: Int): Float = 0`
+		- Java: `float calculateBMI(int weight, int height) { return 0; }`
+		- TypeScript: `function calculateBMI(weight: number, height: number): number { return 0 }`
+		- C++: `float calculateBMI(int weight, int height) { return 0; }`
+		- Rust: `fn calculateBMI(weight: i32, height: i32) -> f32 { 0.0 }`
+			example: input: weight: 60, height: 170, output: 20.76
+		- C#: `float calculateBMI(int weight, int height) { return 0; }`
+
+- [ ] int to double
+	e.g. Go: int to double, Python: int to float, Kotlin: Int to Double, Java: int to double, TypeScript: number to number, C++: int to double, Rust: i32 to f64, C#: int to double
+	code example function name that use in real world in loan domain:
+	- [ ] calculateInterest
+		- Go: `func calculateInterest(principal int, rate int, year int) float64 { return 0 }`
+			example: input: principal: 100000, rate: 5, year: 5, output: 127628.156250
+			formula for calculate interest: `A = P(1 + rt)`
+			- A = the future value of the investment/loan, including interest
+			- P = the principal investment amount (the initial deposit or loan amount)
+			- r = the annual interest rate (decimal)
+			- t = the time the money is invested or borrowed for (in years)
+		- Python: `def calculateInterest(principal: int, rate: int, year: int) -> float: return 0`
+		- Kotlin: `fun calculateInterest(principal: Int, rate: Int, year: Int): Double = 0`
+		- Java: `double calculateInterest(int principal, int rate, int year) { return 0; }`
+		- TypeScript: `function calculateInterest(principal: number, rate: number, year: number): number { return 0 }`
+		- C++: `double calculateInterest(int principal, int rate, int year) { return 0; }`
+		- Rust: `fn calculateInterest(principal: i32, rate: i32, year: i32) -> f64 { 0.0 }`
+			example: input: principal: 100000, rate: 5, year: 5, output: 127628.156250
+		- C#: `double calculateInterest(int principal, int rate, int year) { return 0; }`
+
+- [ ] float to int
+	e.g. Go: float to int, Python: float to int, Kotlin: Float to Int, Java: float to int, TypeScript: number to number, C++: float to int, Rust: f32 to i32, C#: float to int
+	code example function name that use in real world in split the real item to each person:
+	- [ ] splitItem
+		- Go: `func splitItem(total float32, person int) int { return 0 }`
+			example: input: total: 100, person: 3, output: 33
+		- Python: `def splitItem(total: float, person: int) -> int: return 0`
+		- Kotlin: `fun splitItem(total: Float, person: Int): Int = 0`
+		- Java: `int splitItem(float total, int person) { return 0; }`
+		- TypeScript: `function splitItem(total: number, person: number): number { return 0 }`
+		- C++: `int splitItem(float total, int person) { return 0; }`
+		- Rust: `fn splitItem(total: f32, person: i32) -> i32 { 0 }`
+			example: input: total: 100, person: 3, output: 33
+		- C#: `int splitItem(float total, int person) { return 0; }`
+
+- [ ] float to float
+	e.g. Go: float to float, Python: float to float, Kotlin: Float to Float, Java: float to float, TypeScript: number to number, C++: float to float, Rust: f32 to f32, C#: float to float
+	code example function name that use in real world in split bill:
+	- [ ] splitBill
+		- Go: `func splitBill(total float32, person int) float32 { return 0 }`
+			example: input: total: 100, person: 3, output: 33.33
+		- Python: `def splitBill(total: float, person: int) -> float: return 0`
+		- Kotlin: `fun splitBill(total: Float, person: Int): Float = 0`
+		- Java: `float splitBill(float total, int person) { return 0; }`
+		- TypeScript: `function splitBill(total: number, person: number): number { return 0 }`
+		- C++: `float splitBill(float total, int person) { return 0; }`
+		- Rust: `fn splitBill(total: f32, person: i32) -> f32 { 0.0 }`
+			example: input: total: 100, person: 3, output: 33.33
+		- C#: `float splitBill(float total, int person) { return 0; }`
+
+- [ ] float to double
+	e.g. Go: float to double, Python: float to float, Kotlin: Float to Double, Java: float to double, TypeScript: number to number, C++: float to double, Rust: f32 to f64, C#: float to double
+	code example function name that use in real world in Exchange rate from USD to EUR as a float and amount in USD:
+	- [ ] exchangeRate float -> float -> double
+		- Go: `func exchangeRate(amount float32, rate float32) float64 { return 0 }`
+			example: input: amount: 100, rate: 0.84, output: 84.0
+		- Python: `def exchangeRate(amount: float, rate: float) -> float: return 0`
+		- Kotlin: `fun exchangeRate(amount: Float, rate: Float): Double = 0`
+		- Java: `double exchangeRate(float amount, float rate) { return 0; }`
+		- TypeScript: `function exchangeRate(amount: number, rate: number): number { return 0 }`
+		- C++: `double exchangeRate(float amount, float rate) { return 0; }`
+		- Rust: `fn exchangeRate(amount: f32, rate: f32) -> f64 { 0.0 }`
+			example: input: amount: 100, rate: 0.84, output: 84.0
+		- C#: `double exchangeRate(float amount, float rate) { return 0; }`
+
+- [ ] double to int
+- [ ] double to float
+- [ ] double to double
+- [ ] int to bool
+- [ ] bool to int
+- [ ] string to bool
+- [ ] bool to string
+- [ ] int to array
+- [ ] int to list
+- [ ] int to set
+- [ ] int to map
